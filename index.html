@@ -9,13 +9,13 @@
     <title>Flower Market</title>
 </head>
 
-<body class="bg-blue-50">
+<body class="bg-blue-50 ">
     <!-- Navbar -->
-    <nav>
+    <nav class=" flex flex-col md:flex-row md:justify-between items-center gap-4">
         <div class="flex justify-between space-x-[200px] space-y-[30px] mt-[10px] mr-[10px] mb-[10px] ml-[20px] ">
             <img class="w-[50px] h-[20px]" src="./images/logo.png" alt="">
-            <div text-[5px] gap-x-[8px]>
-                <a href="">Home</a>
+            <div text-sm gap-x-[6px] >
+                <a  href="">Home</a>
                 <a class="text-blue-200" href="">Shop</a>
                 <a class="text-blue-200" href="">About Us</a>
                 <a href=""><i class="fa-solid fa-cart-shopping"></i>Cart($56)</a>
@@ -23,17 +23,17 @@
         </div>
     </nav>
     <!-- Banner Section -->
-    <section>
-        <div class="mr-[30px] ml-[30px] flex mb-5">
-            <div>
-                <h1 class="text-lg">ALWAYS <span class="text-orange-400">FRESH</span> <br>
+    <section class="px-4 flex flex-col md:flex-row items-center justify-between mb-6 gap-4">
+        <div class="mr-[30px] ml-[30px] flex mb-5 ">
+            <div class="md:w-1/2">
+                <h1 class="text-lg md:text-4xl">ALWAYS <span class="text-orange-400">FRESH</span> <br>
                     <span class="text-orange-400">FLOWERS</span>
                 </h1>
                 <P class="text-[8px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From
                     classic roses to exotic
                     blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </P>
             </div>
-            <div>
+            <div class="md:w-1/2">
 
                 <img class="w-[600px] h-[100px]" src="./images/hero-flower.png" alt="">
             </div>
@@ -47,7 +47,7 @@
                 classic roses to exotic
                 blooms, we offer a wide variety of fresh.</p>
         </div>
-        <div class="grid grid-cols-4 grid-rows-2 mb-2">
+        <div class="grid grid-cols-4 grid-rows-2 md:grid-cols-2 sm:grid-cols-3 mb-2">
             <div class="w-28 p-2 h-1 ml-4">
                 <img class="w-28" src="./images/sample-flower-image.png" alt="">
                 <div class="text-[10px] ">
@@ -117,9 +117,15 @@
         </div>
     </Section>
     <!-- Plants lover Section -->
-    <Section >
+    <Section md:grid-cols-2 >
         <div class="grid grid-cols-2 m-2">
-            <img class="ml-8 mt-6 w-48" src="./images/flower-store.png" alt="">
+            <div class="relative w-full max-w-md mx-auto">
+                <img class="ml-8 mt-6 w-48 rounded-md shadow" src="./images/flower-store.png" alt="">
+            <div class="absolute top-0 right-1 w-20 h-20">
+                <img class="w-full h-full" src="./images/trusted-badge.png" alt="">
+            </div>
+            </div>
+            
             <div class="ml-2 mt-4 mr-4">
                 <h1 class="text-2xl">Flower & Plants <br> Lover</h1>
                 <ul class="text-[10px] list-disc">
@@ -139,9 +145,9 @@
             <h1 class="text-2xl"><span class="text-orange-500">Latest</span> Deals</h1>
             <p class="text-[8px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses
                         to exotic blooms, we offer a wide variety of fresh.</p>
-                        <div class="">
-                            <div class=" mx-auto grid grid-cols-1  gap-4 ">
-                                <div class="flex flex-col gap-4 ">
+                        <div class="ml-4 p-4">
+                            <div class="max-w-6xl mx-auto grid grid-cols-3 gap-4 ">
+                                <div class="flex flex-col gap-4 sm:grid-cols-2 md:grid-cols-3 ">
                                     <div class="relative rounded-lg overflow-hidden">
                                         <img class=" object-cover" src="./images/deal-bloom.png" alt="Bloom Plant">
                                         <div class="absolute inset-0  bg-opacity-30 flex flex-col justify-center items-start p-4">
@@ -157,8 +163,8 @@
                                             </div>
                                         </div>
                                 </div>
-                                <div class="relative md:col-span-2 overflow-hidden">
-                                    <img class=" object-cover" src="./images/deal-zabo.png" alt="Zabo Plant">
+                                <div class="relative md:col-span-2 rounded-lg overflow-hidden">
+                                    <img class="w-full h-full object-cover" src="./images/deal-zabo.png" alt="Zabo Plant">
                                     <div class="absolute inset-0  bg-opacity-30 flex flex-col justify-center items-center px-4">
                                         <h2 class="text-white font-semibold text-sm">25% off |<span class="font-bold">Zabo Plant</span> </h2>
                                         <a class="mt-2 text-white underline text-sm" href="">Shop Now</a>
@@ -182,6 +188,8 @@
          </div>
         </div>
      </section>
+     
+
 </body>
 <!-- Footer Section -->
 <footer>
